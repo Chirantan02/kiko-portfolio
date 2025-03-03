@@ -51,22 +51,7 @@ export default function About() {
       id: 5, 
       src: "/images/about/small5.png", 
       alt: "Creative Exploration Small 5",
-    },
-    { 
-      id: 6, 
-      src: "/images/about/small6.png", 
-      alt: "Creative Exploration Small 6",
-    },
-    { 
-      id: 7, 
-      src: "/images/about/small7.png", 
-      alt: "Creative Exploration Small 7",
-    },
-    { 
-      id: 8, 
-      src: "/images/about/small8.png", 
-      alt: "Creative Exploration Small 8",
-    },
+    }
   ];
 
   return (
@@ -188,55 +173,65 @@ export default function About() {
               {/* 4 Small Images in 2x2 Grid */}
               <div className="md:col-span-2">
                 <div className="grid grid-cols-2 gap-6 h-full">
-                  <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
-                    <Image
-                      src={smallExplorations[4].src}
-                      alt={smallExplorations[4].alt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 50vw, 16vw"
-                    />
-                  </div>
-                  <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
-                    <Image
-                      src={smallExplorations[5].src}
-                      alt={smallExplorations[5].alt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 50vw, 16vw"
-                    />
-                  </div>
-                  <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
-                    <Image
-                      src={smallExplorations[6].src}
-                      alt={smallExplorations[6].alt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 50vw, 16vw"
-                    />
-                  </div>
-                  <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
-                    <Image
-                      src={smallExplorations[7].src}
-                      alt={smallExplorations[7].alt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 50vw, 16vw"
-                    />
-                  </div>
+                  {smallExplorations.length > 4 && (
+                    <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
+                      <Image
+                        src={smallExplorations[4].src}
+                        alt={smallExplorations[4].alt}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 50vw, 16vw"
+                      />
+                    </div>
+                  )}
+                  {smallExplorations.length > 5 && (
+                    <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
+                      <Image
+                        src={smallExplorations[5].src}
+                        alt={smallExplorations[5].alt}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 50vw, 16vw"
+                      />
+                    </div>
+                  )}
+                  {smallExplorations.length > 6 && (
+                    <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
+                      <Image
+                        src={smallExplorations[6].src}
+                        alt={smallExplorations[6].alt}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 50vw, 16vw"
+                      />
+                    </div>
+                  )}
+                  {smallExplorations.length > 7 && (
+                    <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
+                      <Image
+                        src={smallExplorations[7].src}
+                        alt={smallExplorations[7].alt}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 50vw, 16vw"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
               
               {/* Large Image */}
               <div className="md:col-span-1">
                 <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
-                  <Image
-                    src={largeExplorations[1].src}
-                    alt={largeExplorations[1].alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
+                  {largeExplorations.length > 1 && (
+                    <Image
+                      src={largeExplorations[1].src}
+                      alt={largeExplorations[1].alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  )}
                 </div>
               </div>
             </div>

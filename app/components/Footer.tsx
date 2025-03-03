@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FaLinkedin, FaGithub, FaBehance, FaDribbble } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,44 +13,6 @@ const Footer = () => {
             <p className="text-gray-600 mb-6 max-w-md">
               Crafting intuitive and beautiful digital experiences that solve real user problems and elevate brands through thoughtful design.
             </p>
-            <div className="flex space-x-6 mt-6">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-black transition-colors"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin size={22} />
-              </a>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-black transition-colors"
-                aria-label="GitHub"
-              >
-                <FaGithub size={22} />
-              </a>
-              <a
-                href="https://behance.net"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-black transition-colors"
-                aria-label="Behance"
-              >
-                <FaBehance size={22} />
-              </a>
-              <a
-                href="https://dribbble.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-black transition-colors"
-                aria-label="Dribbble"
-              >
-                <FaDribbble size={22} />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
