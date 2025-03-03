@@ -4,11 +4,6 @@ import React from 'react';
 import Link from 'next/link';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
-export const metadata = {
-  title: 'Contact | Khushi - Premium UI/UX Designer',
-  description: 'Get in touch with Khushi for design collaborations and opportunities.',
-};
-
 export default function ContactPage() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
