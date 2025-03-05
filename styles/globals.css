@@ -1,0 +1,31 @@
+@keyframes wing-flutter {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(15deg) scale(1.1); }
+}
+
+@keyframes subtle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.fairy-butterfly {
+  animation: subtle-float 3s ease-in-out infinite;
+}
+
+.wing {
+  transform-origin: center;
+  animation: wing-flutter 1.5s ease-in-out infinite alternate;
+}
+
+.left-wing {
+  animation-delay: -0.75s;
+}
+
+.sparkle {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+} 
